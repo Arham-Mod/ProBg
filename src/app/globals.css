@@ -3,12 +3,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Unbounded", Arial, sans-serif; /* Fallback to Arial if Unbounded fails */
-  background-color: #06001e; /* Base color as fallback */
-  background-image: url('/Random_static_2.png'); /* Correct path in public */
-  background-size: cover; /* Cover the entire page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
+  background-color: #100a27; /* Base dark color as fallback */
+  background: url('/Random_static_2.png') no-repeat center/cover, /* Bottom layer (starry background) */
+              url('/Vector_sphere.png') no-repeat center/cover; /* Top layer (grid/sphere effect) */
   min-height: 100vh; /* Ensure full viewport height */
+  /* Ensure background color shows if images fail */
+  background-color: #06001e !important; /* Override any white defaults */
 }
 
 main section {
