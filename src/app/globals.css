@@ -43,7 +43,6 @@ main section p{
   position: relative;
   overflow: hidden;
   margin-top: -250px;
-  border: 10px solid transparent; /* Thickness of the border area */
-  border-image: url('/assets/borders/custom_border.svg') 30 round;
+  
 }
 
