@@ -39,14 +39,23 @@ main section p{
 .blur-box {
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.04);
+  border: 12px solid #7c7c7c;
   border-radius: 50px;
   position: relative;
   overflow: hidden;
   margin-top: -250px;
-  border: 10px solid transparent; /* Define border thickness */
-  -webkit-border-image: url('/DUMPINGS/daemon/public/Border.svg') 30 round; /* Safari fallback */
-  -o-border-image: url('/DUMPINGS/daemon/public/Border.svg') 30 round; /* Opera fallback */
-  border-image: url('/DUMPINGS/daemon/public/Border.svg') 30 round;
-  
+}
+.nav-box {
+  border: 1px solid #ffffff;
+  background: transparent;
+  width: 50%; /* Relative width */
+  margin: 0 auto;
+  border-radius: 200px;  
+}
+
+.nav-box ul{
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
 }
 
