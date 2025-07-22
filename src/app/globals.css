@@ -39,10 +39,14 @@ main section p{
 .blur-box {
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.04);
-  border-radius: 80px;
+  border-radius: 50px;
   position: relative;
   overflow: hidden;
   margin-top: -250px;
+  border: 10px solid transparent; /* Define border thickness */
+  -webkit-border-image: url('/DUMPINGS/daemon/public/Border.svg') 30 round; /* Safari fallback */
+  -o-border-image: url('/DUMPINGS/daemon/public/Border.svg') 30 round; /* Opera fallback */
+  border-image: url('/DUMPINGS/daemon/public/Border.svg') 30 round;
   
 }
 
